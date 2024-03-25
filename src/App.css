@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 50px;
+    color: #1a133a;
+    min-height: 100vh;
+    background: #4a729b;
+    text-rendering: optimizeSpeed;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.App {
+    padding: 1rem;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background: #b9848c;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-weight: 300;
+    color: #02315E;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.input_wrapper {
+
+    width: 100%;
+    max-width: 400px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.input_wrapper input {
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    color: #171133;
+    margin-right: 5px;
+    border-radius: 20px;
+    height: 50px;
+}
+
+.tasks_wrapper {
+    margin-bottom: 2.5rem;
+}
+
+
+.todo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.todo input[type='checkbox']{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #02315E;
+    outline: none;
+}
+
+.todo input[type='checkbox']:checked {
+    background-color: #02315E;
+}
+
+input {
+    width: 250px;
+    padding: 0.8em;
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #1e1936;
+}
+
+button {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    border-radius: 20px;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+input,
+button {
+    font-size: 1em;
+    appearance: none;
+    color: currentcolor;
+    background: transparent;
+    background-color: #2F70AF;
+    border: 1px solid #00457E;
+}
+
+.add_button {
+    color: #806491;
+    border-left: none;
+    margin: 5px;
+
+}
+
+.delete_button {
+    color: #fe6a6a;
+    border-radius: 20px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+li {
+    width: 250px;
+    padding: 0.85em;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    background: #80b8e6;
+    letter-spacing: 0.02rem;
+    transition: all 0.3s ease-out;
+    border-left: 5px solid #02315E;
+    border-radius: 20px;
+}
+
+li:last-child {
+    margin-bottom: 0px;
+}
+
+.empty {
+    font-size: 20px;
+    font-weight: 400;
+    color: #02315E;
+    letter-spacing: 0.2rem;
+}
+img{
+    margin-top: 2px;
+    width: 25px;
+    filter: brightness(0) saturate(100%) invert(11%) sepia(7%) saturate(7498%) hue-rotate(215deg) brightness(96%) contrast(88%);
+}
+#edit{margin-top: 2px;
+    margin-left: 2px;}
+
+
+@media screen and (max-width: 600px) {
+    .input_wrapper input {
+        font-size: 14px;
+    }
+}
